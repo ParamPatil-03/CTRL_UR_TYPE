@@ -8,7 +8,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'cp target/typing-game.war /opt/tomcat9/webapps/'
+                
+                sh 'cp -f target/typing-game.war /opt/tomcat9/webapps/'
             }
         }
     }
